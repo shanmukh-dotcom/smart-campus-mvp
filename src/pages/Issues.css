@@ -1,0 +1,140 @@
+/* src/pages/Issues.css */
+.issues-container {
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.report-form-card {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  margin-bottom: 2rem;
+}
+
+.report-form-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.report-form-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.issue-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background-color: var(--bg-main);
+}
+
+.form-input:focus, .form-textarea:focus {
+  border-color: var(--primary);
+  background-color: white;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-1 { flex: 1; justify-content: center; }
+.flex-2 { flex: 2; justify-content: center; }
+
+.issues-list-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.issues-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.issue-card {
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.issue-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.issue-info {
+  flex: 1;
+}
+
+.issue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.25rem;
+}
+
+.issue-header h4 {
+  font-size: 1rem;
+  color: var(--text-main);
+  font-weight: 600;
+  margin: 0;
+}
+
+.status-badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+.status-badge.open {
+  background-color: #fef3c7;
+  color: var(--warning);
+}
+
+.status-badge.resolved {
+  background-color: #dcfce3;
+  color: #166534;
+}
+
+.issue-info p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.issue-date {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
