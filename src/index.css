@@ -37,6 +37,44 @@ body {
   min-height: 100vh;
 }
 
+/* --- DARK MODE --- */
+body.dark-mode {
+  --bg-main: #0f172a;
+  --bg-card: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+}
+
+/* Force dark backgrounds on hardcoded white cards */
+body.dark-mode .stat-card,
+body.dark-mode .login-card,
+body.dark-mode .role-card,
+body.dark-mode .compose-card,
+body.dark-mode .report-form-card,
+body.dark-mode .lf-form-card,
+body.dark-mode .profile-header-card,
+body.dark-mode .card,
+body.dark-mode .quick-tip,
+body.dark-mode .crowd-info-card,
+body.dark-mode .doubts-feed .doubt-card {
+  background-color: var(--bg-card) !important;
+  color: var(--text-main) !important;
+}
+
+body.dark-mode .btn-outline {
+  background-color: transparent !important;
+}
+
+body.dark-mode .bottom-nav {
+  background-color: rgba(30, 41, 59, 0.95) !important;
+}
+
+body.dark-mode .issue-icon, body.dark-mode .rc-icon {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+
 a {
   text-decoration: none;
   color: inherit;

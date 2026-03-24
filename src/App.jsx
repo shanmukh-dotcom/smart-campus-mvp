@@ -19,6 +19,11 @@ export default function App() {
   useEffect(() => {
     DB.init();
     setUser(DB.getCurrentUser());
+    
+    // Apply saved theme preference
+    if(localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
   }, []);
 
   if (!user) {

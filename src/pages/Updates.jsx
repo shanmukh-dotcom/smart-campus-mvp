@@ -18,7 +18,7 @@ export default function Updates() {
        </div>
        <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
           {announcements.map(a => (
-            <div key={a.id} className="card" style={{backgroundColor: 'white'}}>
+            <div key={a.id} className="card" style={{backgroundColor: 'var(--bg-card)'}}>
                <div style={{fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.25rem'}}>{new Date(a.date).toLocaleDateString()}</div>
                <h4 style={{fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--text-main)'}}>{a.title}</h4>
                <p style={{fontSize: '0.95rem', color: 'var(--text-muted)'}}>{a.content}</p>
