@@ -33,7 +33,7 @@ export default function Issues({ user }) {
 
   return (
     <div className="issues-container">
-      <div className="page-hero" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80")'}}>
+      <div className="page-hero" style={{backgroundImage: 'url("/issues_hero.png")'}}>
          <div>
             <h1>Report Issue</h1>
             <p>Help keep our campus clean and functional.</p>

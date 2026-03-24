@@ -10,7 +10,7 @@ export default function Updates() {
 
   return (
     <div style={{padding: '1.5rem', maxWidth: '800px', margin: '0 auto'}}>
-       <div className="page-hero" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1503694978374-8a2fa686963a?auto=format&fit=crop&w=1200&q=80")'}}>
+       <div className="page-hero" style={{backgroundImage: 'url("/updates_hero.png")'}}>
           <div>
              <h1>Campus Updates</h1>
              <p>Latest announcements from administration.</p>

@@ -1,5 +1,5 @@
 .login-wrapper {
-  background-image: url("https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80");
+  background-image: url("/login_hero.png");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -39,6 +39,7 @@
   padding: 1.5rem; display: flex; align-items: center; gap: 1rem;
   cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  border: 2px solid var(--primary);
 }
 .role-card:hover { transform: translateY(-2px); box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
 .rc-icon {
@@ -52,9 +53,10 @@
 .login-card {
   background: white; border-radius: var(--radius-lg);
   padding: 2rem; width: 100%; max-width: 400px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 2px solid var(--primary);
 }
 .login-input {
-  width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color);
+  width: 100%; padding: 0.75rem 1rem; border: 2px solid var(--primary);
   border-radius: var(--radius-md); font-size: 1rem; margin-bottom: 1rem; outline: none; transition: border-color 0.2s;
 }
 .login-input:focus { border-color: var(--primary); }

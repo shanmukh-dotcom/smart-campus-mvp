@@ -40,7 +40,7 @@ export default function LostFound({ user }) {
 
   return (
     <div className="lf-container">
-      <div className="page-hero" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80")'}}>
+      <div className="page-hero" style={{backgroundImage: 'url("/lostfound_hero.png")'}}>
          <div style={{width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '1rem'}}>
             <div>
                <h1>Lost & Found</h1>
