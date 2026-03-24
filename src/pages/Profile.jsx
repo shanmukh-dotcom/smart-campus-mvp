@@ -15,8 +15,11 @@ export default function Profile({ user }) {
 
   return (
     <div className="profile-container">
-      <div className="page-header">
-         <h2>Profile</h2>
+      <div className="page-hero" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80")'}}>
+         <div>
+            <h1>Profile Settings</h1>
+            <p>Manage your account preferences</p>
+         </div>
       </div>
 
       <div className="profile-header-card">

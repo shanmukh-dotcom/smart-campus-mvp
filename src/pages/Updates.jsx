@@ -10,8 +10,11 @@ export default function Updates() {
 
   return (
     <div style={{padding: '1.5rem', maxWidth: '800px', margin: '0 auto'}}>
-       <div className="page-header" style={{display: 'flex', alignItems: 'center', marginBottom: '1.5rem'}}>
-          <h2 style={{fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-main)'}}>Campus Updates</h2>
+       <div className="page-hero" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1503694978374-8a2fa686963a?auto=format&fit=crop&w=1200&q=80")'}}>
+          <div>
+             <h1>Campus Updates</h1>
+             <p>Latest announcements from administration.</p>
+          </div>
        </div>
        <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
           {announcements.map(a => (

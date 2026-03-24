@@ -67,8 +67,11 @@ export default function Doubts({ user }) {
 
   return (
     <div className="doubts-container">
-      <div className="page-header">
-         <h2>Doubts & Discussions</h2>
+      <div className="page-hero" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80")'}}>
+         <div>
+            <h1>Doubts & Discussions</h1>
+            <p>Collaborate with the campus community.</p>
+         </div>
       </div>
 
       <div className="compose-card">

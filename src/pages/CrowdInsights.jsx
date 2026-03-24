@@ -34,8 +34,11 @@ export default function CrowdInsights() {
 
   return (
     <div className="crowd-container">
-      <div className="page-header">
-         <h2>Crowd Insights</h2>
+      <div className="page-hero" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1555529733-0e370560ec87?auto=format&fit=crop&w=1200&q=80")'}}>
+         <div>
+            <h1>Crowd Insights</h1>
+            <p>Know where the crowd is before you head out.</p>
+         </div>
       </div>
       
       <div className="crowd-info-card">

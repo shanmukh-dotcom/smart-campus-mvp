@@ -29,7 +29,7 @@ export default function Home({ user }) {
       </div>
 
       <div className="hero-banner">
-        <div className="hero-image" style={{backgroundImage: 'url("/campus_hero.png")'}}>
+        <div className="hero-image" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80")'}}>
         </div>
         <div className="hero-content">
           <h2>Welcome to SmartCampus</h2>

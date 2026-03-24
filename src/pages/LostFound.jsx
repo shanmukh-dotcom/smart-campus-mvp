@@ -40,11 +40,16 @@ export default function LostFound({ user }) {
 
   return (
     <div className="lf-container">
-      <div className="page-header" style={{justifyContent: 'space-between'}}>
-         <h2>Lost & Found</h2>
-         <button className="btn btn-primary" onClick={() => setShowForm(!showForm)}>
-            <Plus size={18} /> {showForm ? 'Cancel' : 'Report Item'}
-         </button>
+      <div className="page-hero" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80")'}}>
+         <div style={{width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '1rem'}}>
+            <div>
+               <h1>Lost & Found</h1>
+               <p style={{margin: 0}}>Find what you lost. Return what you found.</p>
+            </div>
+            <button className="btn btn-primary" onClick={() => setShowForm(!showForm)}>
+               <Plus size={18} /> {showForm ? 'Cancel' : 'Report Item'}
+            </button>
+         </div>
       </div>
 
       {showForm && (
