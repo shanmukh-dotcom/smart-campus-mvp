@@ -43,7 +43,7 @@ export default function Profile({ user }) {
          <div className="profile-avatar-large">
             {user?.name ? user.name[0] : 'U'}
          </div>
-         <h3>{user?.name || 'Alex Kumar'}</h3>
+         <h3>{user?.name || 'Shanmukh Kumar'}</h3>
          <p>CSE · 3rd Year</p>
       </div>
 

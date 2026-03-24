@@ -84,7 +84,7 @@ export const DB = {
     if (accessCode.trim().toUpperCase() === 'CAMPUS2024') {
       const users = this.read('users');
       const newUserId = 'student_' + Date.now();
-      const newUser = { id: newUserId, role, name: 'Alex Kumar', joinedAt: new Date().toISOString(), premium: false };
+      const newUser = { id: newUserId, role, name: 'Shanmukh Kumar', joinedAt: new Date().toISOString(), premium: false };
       users.push(newUser);
       this.write('users', users);
       localStorage.setItem('smartcampus_user_id', newUserId);
