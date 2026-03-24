@@ -38,8 +38,12 @@ const INITIAL_DATA = {
 
 export const DB = {
   init() {
-    if (!localStorage.getItem('smartcampus_data')) {
+    let dataStr = localStorage.getItem('smartcampus_data');
+    if (!dataStr) {
       localStorage.setItem('smartcampus_data', JSON.stringify(INITIAL_DATA));
+    } else if (dataStr.includes('Alex Kumar')) {
+      dataStr = dataStr.replace(/Alex Kumar/g, 'Shanmukh Kumar');
+      localStorage.setItem('smartcampus_data', dataStr);
     }
   },
   
