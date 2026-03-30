@@ -36,10 +36,10 @@ export default function CampusMap() {
       </div>
 
       <div className="map-view">
-         <div className="map-placeholder">
-            <MapPin size={32} color="var(--secondary)" style={{marginBottom: '0.5rem'}} />
-            <h3 style={{color: 'var(--secondary)'}}>Interactive Map</h3>
-            <p>Tap a location below</p>
+         <div className="map-placeholder" style={{ backgroundColor: 'rgba(255, 255, 255, 0.9)', padding: '1rem 2rem', borderRadius: '16px', backdropFilter: 'blur(8px)', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
+            <MapPin size={32} color="var(--primary)" style={{marginBottom: '0.25rem'}} />
+            <h3 style={{color: 'var(--text-main)', margin: '0 0 0.15rem 0', fontWeight: '800'}}>Smart Campus Map</h3>
+            <p style={{margin: 0, fontWeight: 500}}>Tap a location below</p>
          </div>
          <button className="btn btn-primary locate-me-btn">
             <Navigation size={16} /> Locate Me
