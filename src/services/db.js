@@ -27,6 +27,12 @@ const INITIAL_DATA = {
     { id: 1, type: 'lost', item: 'Blue Water Bottle', description: 'Lost near the cafeteria', contact: 'user123', createdAt: new Date().toISOString() },
     { id: 2, type: 'found', item: 'Calculator', description: 'Found in CS Lab 301', contact: 'admin', createdAt: new Date().toISOString() }
   ],
+  study_groups: [
+    { id: 'chem', name: 'Chemistry Seminar', members_count: 15, active_count: 3, description: 'Weekly seminar prep group', lastMessage: 'What is the topic for tomorrow?' },
+    { id: 'general', name: 'CSE 3rd Year', members_count: 24, active_count: 5, description: 'General discussion for CSE batch', lastMessage: 'Anyone ready for the quiz?' },
+    { id: 'ds', name: 'Data Structures', members_count: 18, active_count: 2, description: 'Assignment 2 help', lastMessage: 'Linked list implementation looks tricky' },
+    { id: 'ai', name: 'AI & Robotics Club', members_count: 42, active_count: 0, description: 'Project discussions and meetups', lastMessage: 'Check out this new paper!' },
+  ],
   messages: [
     { id: 1, groupId: 'general', authorId: 'temp_2', text: 'Hey everyone!', timestamp: new Date().toISOString(), isAi: false },
     { id: 2, groupId: 'general', authorId: 'ai', text: 'Hello! I am Buddy, your AI assistant. Tag @buddy for help.', timestamp: new Date().toISOString(), isAi: true }
@@ -41,8 +47,17 @@ export const DB = {
     let dataStr = localStorage.getItem('smartcampus_data');
     if (!dataStr) {
       localStorage.setItem('smartcampus_data', JSON.stringify(INITIAL_DATA));
-    } else if (dataStr.includes('Alex Kumar')) {
-      dataStr = dataStr.replace(/Alex Kumar/g, 'Shanmukh Kumar');
+    } else {
+      if (dataStr.includes('Alex Kumar')) {
+        dataStr = dataStr.replace(/Alex Kumar/g, 'Shanmukh Kumar');
+      }
+      try {
+        const data = JSON.parse(dataStr);
+        if (!data.study_groups || data.study_groups.length === 0) {
+          data.study_groups = INITIAL_DATA.study_groups;
+          dataStr = JSON.stringify(data);
+        }
+      } catch (e) { console.error(e); }
       localStorage.setItem('smartcampus_data', dataStr);
     }
   },
