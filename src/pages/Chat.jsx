@@ -76,7 +76,8 @@ export default function Chat({ user }) {
     loadMessages(activeGroupId);
 
     // 2. MVP AI Check
-    if (text.toLowerCase().includes('@buddy') || text.toLowerCase().includes('@ai')) {
+    const lowerText = text.toLowerCase();
+    if (lowerText.includes('@buddy') || lowerText.includes('@ai') || lowerText.includes('buddy')) {
       setIsAiTyping(true);
       
       const aiReply = getAiResponse(text);
