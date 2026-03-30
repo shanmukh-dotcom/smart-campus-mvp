@@ -36,14 +36,16 @@ export default function CampusMap() {
       </div>
 
       <div className="map-view">
-         <div className="map-placeholder" style={{ backgroundColor: 'rgba(255, 255, 255, 0.9)', padding: '1rem 2rem', borderRadius: '16px', backdropFilter: 'blur(8px)', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
-            <MapPin size={32} color="var(--primary)" style={{marginBottom: '0.25rem'}} />
-            <h3 style={{color: 'var(--text-main)', margin: '0 0 0.15rem 0', fontWeight: '800'}}>Smart Campus Map</h3>
-            <p style={{margin: 0, fontWeight: 500}}>Tap a location below</p>
-         </div>
-         <button className="btn btn-primary locate-me-btn">
-            <Navigation size={16} /> Locate Me
-         </button>
+         <iframe 
+          title="Campus Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.63929062107!2d-122.17252628469275!3d37.42747447982361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa53df4bc5beb%3A0x6bba46c9343bed61!2sStanford%20University!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" 
+          width="100%" 
+          height="100%" 
+          style={{ border: 0, borderRadius: 'var(--radius-lg)' }} 
+          allowFullScreen="" 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"
+         ></iframe>
       </div>
 
       <div className="locations-section">
