@@ -30,6 +30,7 @@ This project was designed as a lightweight, lightning-fast frontend MVP, allowin
 Because the database interactions execute entirely in your local browser storage, anyone who opens the site gets their own isolated, fully-functional instance of the app! 
 
 **Login Credentials for the MVP:**
+https://smart-campus-mvp.vercel.app/
 - Single Access Code: `CAMPUS2024`
 
 ### Installation Instructions
